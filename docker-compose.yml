@@ -1,0 +1,43 @@
+services:
+  accounts:
+#    container_name: accounts-ms
+    build:
+      context: ./accounts
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - microservice-bank
+  loans:
+#    container_name: loans-ms
+    build:
+      context: ./loans
+      dockerfile: Dockerfile
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - microservice-bank
+  cards:
+#    container_name: cards-ms
+    build:
+      context: ./cards
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - microservice-bank
+networks:
+  microservice-bank:
+    driver: bridge
