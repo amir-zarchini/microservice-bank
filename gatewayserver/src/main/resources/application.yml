@@ -25,7 +25,7 @@ management:
 info:
   app:
     name: "gatewayserver"
-    description: "Eazy Bank Gateway Server Application"
+    description: "Microservice Bank Gateway Server Application"
     version: "1.0.0"
 
 logging:
