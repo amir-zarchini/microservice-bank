@@ -20,7 +20,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @OpenAPIDefinition(
 		info = @Info(
 				title = "Loans microservice REST API Documentation",
-				description = "EazyBank Loans microservice REST API Documentation",
+				description = "Microservice Bank Loans microservice REST API Documentation",
 				version = "v1",
 				contact = @Contact(
 						name = "Madan Reddy",
@@ -33,7 +33,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 				)
 		),
 		externalDocs = @ExternalDocumentation(
-				description = "EazyBank Loans microservice REST API Documentation",
+				description = "Microservice Bank Loans microservice REST API Documentation",
 				url = "https://www.eazybytes.com/swagger-ui.html"
 		)
 )
